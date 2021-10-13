@@ -134,7 +134,7 @@
   "require": {
     "wpackagist-plugin/timber-library": "1.18.2",
     "perimetre/advanced-custom-fields-pro": "*",
-    "perimetre/bigcommerce": "*",
+    "wpackagist-plugin/bigcommerce": "*",
     "perimetre/gravityforms": "*",
     "perimetre/gravityformsmailchimp": "*",
     "perimetre/gravityformsrecaptcha": "*",
