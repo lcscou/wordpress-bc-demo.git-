@@ -133,16 +133,8 @@
   ],
   "require": {
     "wpackagist-plugin/timber-library": "1.18.2",
-    "perimetre/advanced-custom-fields-pro": "*",
-    "wpackagist-plugin/bigcommerce": "*",
-    "perimetre/gravityforms": "*",
-    "perimetre/gravityformsmailchimp": "*",
-    "perimetre/gravityformsrecaptcha": "*",
-    "perimetre/gravityformssendgrid": "*",
-    "perimetre/sitepress-multilingual-cms": "*",
-    "perimetre/wpml-media-translation": "*",
-    "perimetre/wpml-string-translation": "*",
-    "perimetre/wpml-translation-management": "*"
+    "wpackagist-plugin/bigcommerce": "*"
+
   },
   "autoload": {
     "psr-0": {
