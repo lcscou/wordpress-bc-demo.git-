@@ -1,0 +1,159 @@
+{
+  "name": "perimetre/new-project",
+  "description": "New Project",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org",
+      "only": [
+        "wpackagist-plugin/*",
+        "wpackagist-theme/*"
+      ]
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/advanced-custom-fields-pro",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/advanced-custom-fields-pro.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/gravityforms",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/gravityforms_2.5.10.1.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/gravityformsmailchimp",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/gravityformsmailchimp_4.9.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/gravityformsrecaptcha",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/gravityformsrecaptcha_1.1.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/gravityformssendgrid",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/gravityformssendgrid_1.5.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/gravityformssendgrid",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/gravityformssendgrid_1.5.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/sitepress-multilingual-cms",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/sitepress-multilingual-cms.4.4.12.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/wpml-media-translation",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/wpml-media-translation.2.6.5.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/wpml-string-translation",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/wpml-string-translation.3.1.10.zip"
+        }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "perimetre/wpml-translation-management",
+        "type": "wordpress-plugin",
+        "version": "1.0",
+        "dist": {
+          "type": "zip",
+          "url": "https://perimetre.github.io/wordpress-plugins/wpml-translation-management.2.10.8.zip"
+        }
+      }
+    }
+  ],
+  "require": {
+    "wpackagist-plugin/timber-library": "1.18.2",
+    "perimetre/advanced-custom-fields-pro": "*",
+    "perimetre/gravityforms": "*",
+    "perimetre/gravityformsmailchimp": "*",
+    "perimetre/gravityformsrecaptcha": "*",
+    "perimetre/gravityformssendgrid": "*",
+    "perimetre/sitepress-multilingual-cms": "*",
+    "perimetre/wpml-media-translation": "*",
+    "perimetre/wpml-string-translation": "*",
+    "perimetre/wpml-translation-management": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "Perimetre": "src/"
+    }
+  },
+  "extra": {
+    "installer-paths": {
+      "wp-content/mu-plugins/{$name}/": [],
+      "wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+docker exec -i perimetre/wordpress mysqldump -h mysql -u wordpress -pwordpress --add-drop-table wordpress | gzip > "./db/dump/wordpress.sql.zip"

@@ -1,0 +1,99 @@
+#
+# Adapted from here: http://www.billerickson.net/git-push-wpengine/
+#
+
+# Ignore everything #
+**
+
+# Keep data folder EMPTY
+!data/
+data/**
+
+# Keep basic folders EMPTY
+!wp-content/
+wp-content/**
+!wp-content/themes/
+wp-content/themes/**
+
+
+
+# Add two rules for each Theme or Plugin you want to include:
+# 1. !folder-name/    <-- includes the Plugin and top level files
+# 2. !folder-name/**  <-- includes the Plugin and sub level files recursively, except for the "Ignore some other system generated files" rules below
+###############################
+
+# Start editing!
+
+
+
+# composer
+!vendor
+!composer.json
+!composer.phar
+!composer.lock
+
+#Dump DB folder
+!db/
+!db/dump
+# scripts
+!fix_permissions.sh
+!start_new_project.sh
+!dump-db.sh
+!update-db.sh
+
+# Xdebug Config
+!.vscode/
+!.vscode/** 
+
+# Theme
+!wp-content/themes/**
+
+# Ignore any filename with BACKUP on it
+*BACKUP*
+
+# Keep all plugins
+!wp-content/plugins/**
+
+# Other dependencies
+!.eslintrc
+
+# Stop editing!
+
+############################################
+# Ignore some other system generated files #
+############################################
+.DS_Store
+._*
+.Trashes
+Thumbs.db
+
+# Keep document files #
+###################################
+!README.md
+!CHANGELOG.md
+
+# Keep .gitignore #
+###################################
+!.gitignore
+!.gitkeep
+
+# Keep .editorconfig #
+###################################
+!.editorconfig
+
+# Docker Sample Config
+###################################
+!docker-compose.yml
+
+# Circleci
+###################################
+!.circleci/
+!.circleci/**
+
+# GitHub
+###################################
+!.github/
+!.github/**
+
+# Ignore node_modules
+node_modules/
