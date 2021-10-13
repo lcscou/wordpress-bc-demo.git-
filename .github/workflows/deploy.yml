@@ -8,8 +8,8 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
 
-      - name: 🚀 Download Plugins
-        uses: php-actions/composer@v6
+      # - name: 🚀 Download Plugins
+      #   uses: php-actions/composer@v6
 
       - name: 📂 Sync files with WP Engine
         uses: SamKirkland/FTP-Deploy-Action@4.1.0
