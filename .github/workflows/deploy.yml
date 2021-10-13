@@ -17,4 +17,4 @@ jobs:
           server: ${{ secrets.SFTP_SERVER }}
           username: ${{ secrets.SFTP_USER }}
           password: ${{ secrets.SFTP_PASSWORD }}
-          server-dir: ${{ secrets.SFTP_FOLDER }}
+          server-dir: /domains/lucascoutinho.com.br/public_html/worpress-bc-demo/
