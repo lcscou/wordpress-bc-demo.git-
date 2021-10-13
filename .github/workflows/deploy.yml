@@ -17,23 +17,4 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_FOLDER }}on: push
-name: 🚀 Deploy Wordpress
-jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: 🚚 Get latest code
-        uses: actions/checkout@v2
-
-      - name: 🚀 Download Plugins
-        uses: php-actions/composer@v6 
-
-      - name: 📂 Sync files with WP Engine
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USER }}
-          password: ${{ secrets.FTP_PASSWORD }}
           server-dir: ${{ secrets.FTP_FOLDER }}
