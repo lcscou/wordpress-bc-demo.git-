@@ -30,7 +30,7 @@ wp-content/themes/**
 !vendor
 !composer.json
 !composer.phar
-!composer.lock
+composer.lock
 
 #Dump DB folder
 !db/
